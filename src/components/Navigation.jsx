@@ -102,7 +102,7 @@ const  Navigation = () => {
                             <Button  onClick={() => scrollToPoint(450)}>About us</Button>
                             <Button  onClick={() => scrollToPoint(800)}>Events</Button>
                             <Button  onClick={() => openInNewTab("https://github.com/vecnz/documents")}>Documents</Button>
-                            <Button  onClick={() => openInNewTab("https://docs.google.com/forms/d/e/1FAIpQLSfhp5SL7g9OqzwDFuYpMYe46KMLMTrbKPgqLLLvLaKQVSQCjg/viewform")}>Register</Button>
+                            <Button  onClick={() => openInNewTab("https://forms.gle/vwpFNM31P7Yo3UgW8")}>Register</Button>
                     </StyledDiv>
                 </MediaQuery>     
             </StyledNavigation>
@@ -111,7 +111,7 @@ const  Navigation = () => {
                 <StyledNavigation mobile>
                     <StyledDiv>
                         <Button  onClick={() => openInNewTab("https://github.com/vecnz/documents")}>Documents</Button>
-                        <Button  onClick={() => openInNewTab("https://docs.google.com/forms/d/e/1FAIpQLSfhp5SL7g9OqzwDFuYpMYe46KMLMTrbKPgqLLLvLaKQVSQCjg/viewform")}>Register</Button>
+                        <Button  onClick={() => openInNewTab("https://forms.gle/vwpFNM31P7Yo3UgW8")}>Register</Button>
                     </StyledDiv>
                 </StyledNavigation>
             </MediaQuery>

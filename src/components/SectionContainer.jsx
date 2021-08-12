@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 //CSS for 'section' container
 const SectionDiv = styled.div`
-    padding-left:15rem;
-    padding-right:15rem;
+    padding-left:10%;
+    padding-right:10%;
     padding-bottom:2rem;
     padding-top:2rem;
 
