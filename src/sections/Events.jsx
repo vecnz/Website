@@ -7,7 +7,7 @@ import SectionDiv from "../components/SectionContainer";
 const Calendar = (props) =>{
     return(
                 <Iframe 
-                    url = "https://calendar.google.com/calendar/embed?src=oiid6kbof2h3t22ems643akha4%40group.calendar.google.com&amp;ctz=Pacific%2FAuckland"
+                    url = "https://calendar.google.com/calendar/embed?src=n24bj6sh2ckbafp9j7jjc092sg%40group.calendar.google.com&ctz=Pacific%2FAuckland"
                     width="100%"
                     height={props.heightValue}
                     frameBorder="none"
