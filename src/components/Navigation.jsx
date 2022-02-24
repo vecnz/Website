@@ -102,7 +102,7 @@ const  Navigation = () => {
                             <Button  onClick={() => scrollToPoint(450)}>About us</Button>
                             <Button  onClick={() => scrollToPoint(800)}>Events</Button>
                             <Button  onClick={() => openInNewTab("https://github.com/vecnz/documents")}>Documents</Button>
-                            <Button  onClick={() => openInNewTab("https://forms.gle/vwpFNM31P7Yo3UgW8")}>Register</Button>
+                            <Button  onClick={() => openInNewTab("https://forms.gle/ooUf1NSCgUJV8h4H9")}>Register</Button>
                     </StyledDiv>
                 </MediaQuery>     
             </StyledNavigation>
