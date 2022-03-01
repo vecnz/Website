@@ -1,81 +1,120 @@
 //Package imports
 import styled from "styled-components";
-
+import { slide as Menu } from "react-burger-menu";
 import Link from "next/link";
+import Select from 'react-select';
+import { useEffect, useState } from "react";
+import { useRouter } from 'next/router'
 
 //Style for navigation bar background
 const StyledNavigation = styled.nav`
   background-color: #28375d;
-  color:#ebebeb;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`;
-
-interface SectionProps {
-  side: string;
-}
-
-const Section = styled.div<SectionProps>`
+  color: #ebebeb;
   display: flex;
-  justify-content: ${(props) => props.side};
-  align-items: center;
-  gap: 2rem;
-  height: 100%;
-  width: 100%;
 `;
 
-const Title = styled.button`
-  font-size: 1.5rem;
-  background: transparent;
-  border: none;
-  color:#ebebeb;
-  padding: 1rem;
-`;
 
 const Button = styled.button`
   font-size: 1.5rem;
   background: transparent;
   border: none;
-  color:#ebebeb;
+  color: #ebebeb;
   padding: 1rem;
-  :hover{
-    text-decoration:underline;
+  :hover {
+    text-decoration: underline;
   }
 `;
 
+const DropDownButton = styled.button`
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: #123123;
+  padding: 1rem;
+  :hover {
+    text-decoration: underline;
+  }
+
+`
+
+const DropDown = styled.div`
+  display:grid;
+  grid-template-columns:1fr;
+  color:#123123;
+`
+
+const options = [
+  { value: '/', label: 'Home' },
+  { value: '/events', label: 'Events' },
+  { value: '/exec', label: 'Executives' },
+  { value: '/contact', label: 'Contacts' },
+  { value: '/subclubs', label: 'Sub-clubs' },
+  { value: '/sponsors', label: 'Sponsors' },
+  { value: '/projects', label: 'Projects' },
+  { value: '/exec', label: 'Executives' },
+
+];
+
 //Logic for navigation bar
 const Navigation = () => {
+  const [selectedOption2, setSelectedOption] = useState(null);
+  const router = useRouter();
+
+  const handleChange = (selectedOption:any) =>{
+    console.log(selectedOption.value);
+    router.push(selectedOption.value);
+  }
+  // useEffect(()=>{
+  //   const router = useRouter()
+  //   if(selectedOption !== null){
+  //     router.push(selectedOption);
+  //   }
+  // }[selectedOption])
   return (
     <StyledNavigation>
-      <Section side="left">
-        <Title>VEC</Title>
-      </Section>
-      <Section side="right">
-        <Link href="/">
-          <Button>Home</Button>
-        </Link>
-        <Link href="/events">
-          <Button>Events</Button>
-        </Link> 
-        <Link href="/exec">
-          <Button>Executives</Button>
-        </Link>
-        <Link href="/contact">
-          <Button>Contact</Button>
-        </Link>
-        <Link href="/subclubs">
-          <Button>SubClubs</Button>
-        </Link>
-        <Link href="/sponsors">
-          <Button>Sponsors</Button>
-        </Link>
-        <Link href="/projects">
-          <Button>Projects</Button>
-        </Link>
-        <a target="_blank" href="https://github.com/vecnz/documents">
-          <Button>Documents</Button>
-        </a>
-      </Section>
+      <Button>Victoria Engineering Club</Button>
+      <Select
+        defaultValue={selectedOption2}
+        onChange={handleChange}
+        options={options}
+      />
+
+      
+      {/* <RightButton>
+        Menu */}
+        {/* <Button>REE
+
+        <Menu right>
+          {/* <DropDown> */}
+            {/* <Link href="/">
+              <DropDownButton>Home</DropDownButton>
+            </Link>
+            <Link href="/events">
+              <DropDownButton>Events</DropDownButton>
+            </Link>
+            <Link href="/exec">
+              <DropDownButton>Executives</DropDownButton>
+            </Link>
+            <Link href="/contact">
+              <DropDownButton>Contact</DropDownButton>
+            </Link>
+            <Link href="/subclubs">
+              <DropDownButton>SubClubs</DropDownButton>
+            </Link>
+            <Link href="/sponsors">
+              <DropDownButton>Sponsors</DropDownButton>
+            </Link>
+            <Link href="/projects">
+              <DropDownButton>Projects</DropDownButton>
+            </Link>
+            <a target="_blank" href="https://github.com/vecnz/documents">
+              <DropDownButton>Documents</DropDownButton>
+            </a> */}
+          {/* </DropDown>      */}
+        {/* </Menu>
+        </Button> */}
+
+      {/* </RightButton> */}
     </StyledNavigation>
   );
 };
