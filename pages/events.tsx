@@ -1,3 +1,4 @@
+import Iframe from "react-iframe";
 import Container from "./components/Container";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
@@ -14,47 +15,11 @@ const events = () => {
           Keep up to date with all the officially run events put on by the
           Victoria Engineering Club!
         </Paragraph>
-        <UL>
-          <LI>
-            <UL>
-              <LI><Header>Gaming Marathon</Header></LI>
-              <LI><Paragraph>When: TBD</Paragraph></LI>
-              <LI><Paragraph>Cost: TBD</Paragraph></LI>
-              <LI><Paragraph>Description: TBD</Paragraph></LI>
-            </UL>
-          </LI>
-          <br/>
-          <LI>
-            <UL>
-              <LI><Header>Victoria Hackfest</Header></LI>
-              <LI><Paragraph>When: TBD</Paragraph></LI>
-              <LI><Paragraph>Cost: TBD</Paragraph></LI>
-              <LI><Paragraph>Description: TBD</Paragraph></LI>
-            </UL>
-          </LI>
-          <br/>
-
-          <LI>
-            <UL>
-              <LI><Header>Game Jam</Header></LI>
-              <LI><Paragraph>When: TBD</Paragraph></LI>
-              <LI><Paragraph>Cost: TBD</Paragraph></LI>
-              <LI><Paragraph>Description: TBD</Paragraph></LI>
-            </UL>
-          </LI>
-          <br/>
-
-          <LI>
-            <UL>
-              <LI><Header>Pub Quiz</Header></LI>
-              <LI><Paragraph>When: TBD</Paragraph></LI>
-              <LI><Paragraph>Cost: TBD</Paragraph></LI>
-              <LI><Paragraph>Description: TBD</Paragraph></LI>
-            </UL>
-          </LI>
-          <br/>
-
-        </UL>
+        <Iframe 
+                    url = "https://calendar.google.com/calendar/embed?src=n24bj6sh2ckbafp9j7jjc092sg%40group.calendar.google.com&ctz=Pacific%2FAuckland"
+                    width="100%"
+                    height="1000px"
+                />
       </Content>
       <Footer />
     </Container>

@@ -23,6 +23,26 @@ const subclubs = () => {
               opportunities for internships and graduate programmes, organise
               speaker events and more!
             </Paragraph>
+          </LI>VRAM/VSEC/GDSC
+          <LI>
+            <Header>VRAM</Header>
+            <Paragraph>
+              A robotics club for beginners to experts, holding workshops to teach both the software and hardware sides of robotics.
+              When it is safe to hold, we plan to attend university-level competitions such as VEXU and hope to invite
+              experts in the field to join us.
+            </Paragraph>
+          </LI>
+          <LI>
+            <Header>VSEC</Header>
+            <Paragraph>
+
+            </Paragraph>
+          </LI>
+          <LI>
+            <Header>GDSC</Header>
+            <Paragraph>
+
+            </Paragraph>
           </LI>
         </UL>
       </Content>
