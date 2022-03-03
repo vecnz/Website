@@ -1,10 +1,10 @@
 //Package imports
 import styled from "styled-components";
-import { slide as Menu } from "react-burger-menu";
+import { slide as Menu, State } from "react-burger-menu";
 import Link from "next/link";
-import Select from 'react-select';
+import Select from "react-select";
 import { useEffect, useState } from "react";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 //Style for navigation bar background
 const StyledNavigation = styled.nav`
@@ -12,7 +12,6 @@ const StyledNavigation = styled.nav`
   color: #ebebeb;
   display: flex;
 `;
-
 
 const Button = styled.button`
   font-size: 1.5rem;
@@ -25,96 +24,56 @@ const Button = styled.button`
   }
 `;
 
-const DropDownButton = styled.button`
-  font-size: 1.5rem;
-  background: transparent;
-  border: none;
-  color: #123123;
-  padding: 1rem;
-  :hover {
-    text-decoration: underline;
-  }
-
-`
-
-const DropDown = styled.div`
-  display:grid;
-  grid-template-columns:1fr;
-  color:#123123;
-`
-
 const options = [
-  { value: '/', label: 'Home' },
-  { value: '/events', label: 'Events' },
-  { value: '/exec', label: 'Executives' },
-  { value: '/contact', label: 'Contacts' },
-  { value: '/subclubs', label: 'Sub-clubs' },
-  { value: '/sponsors', label: 'Sponsors' },
-  { value: '/projects', label: 'Projects' },
-  { value: '/exec', label: 'Executives' },
-
+  { value: "/", label: "Home" },
+  { value: "/events", label: "Events" },
+  { value: "/exec", label: "Executives" },
+  { value: "/contact", label: "Contacts" },
+  { value: "/subclubs", label: "Sub-clubs" },
+  { value: "/sponsors", label: "Sponsors" },
+  { value: "/projects", label: "Projects" },
+  { value: "/exec", label: "Executives" },
 ];
+
+const customStyles = {
+  option: (provided:any, state:any) => ({
+    ...provided,
+    color: state.isSelected ? '#28375d' : '#28375d',
+    
+  }),
+  control: (provided:any) => ({
+    ...provided,
+    height: '80%',
+    width:'100%',
+    margin:"7%",
+    // width:'auto',
+    border:'none'
+    
+  }) ,
+  singleValue: (provided:any) => ({
+    ...provided,
+    color: '#28375d',
+  })
+}
 
 //Logic for navigation bar
 const Navigation = () => {
-  const [selectedOption2, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
   const router = useRouter();
 
-  const handleChange = (selectedOption:any) =>{
-    console.log(selectedOption.value);
+  const handleChange = (selectedOption: any) => {
+    setSelectedOption(selectedOption.label);
     router.push(selectedOption.value);
-  }
-  // useEffect(()=>{
-  //   const router = useRouter()
-  //   if(selectedOption !== null){
-  //     router.push(selectedOption);
-  //   }
-  // }[selectedOption])
+  };
   return (
     <StyledNavigation>
       <Button>Victoria Engineering Club</Button>
       <Select
-        defaultValue={selectedOption2}
+        defaultValue={options[0]}
         onChange={handleChange}
         options={options}
+        styles={customStyles}
       />
-
-      
-      {/* <RightButton>
-        Menu */}
-        {/* <Button>REE
-
-        <Menu right>
-          {/* <DropDown> */}
-            {/* <Link href="/">
-              <DropDownButton>Home</DropDownButton>
-            </Link>
-            <Link href="/events">
-              <DropDownButton>Events</DropDownButton>
-            </Link>
-            <Link href="/exec">
-              <DropDownButton>Executives</DropDownButton>
-            </Link>
-            <Link href="/contact">
-              <DropDownButton>Contact</DropDownButton>
-            </Link>
-            <Link href="/subclubs">
-              <DropDownButton>SubClubs</DropDownButton>
-            </Link>
-            <Link href="/sponsors">
-              <DropDownButton>Sponsors</DropDownButton>
-            </Link>
-            <Link href="/projects">
-              <DropDownButton>Projects</DropDownButton>
-            </Link>
-            <a target="_blank" href="https://github.com/vecnz/documents">
-              <DropDownButton>Documents</DropDownButton>
-            </a> */}
-          {/* </DropDown>      */}
-        {/* </Menu>
-        </Button> */}
-
-      {/* </RightButton> */}
     </StyledNavigation>
   );
 };

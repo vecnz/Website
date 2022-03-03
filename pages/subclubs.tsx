@@ -35,7 +35,14 @@ const subclubs = () => {
           </LI>
           <LI>
             <Header>VSEC</Header>
-            <Paragraph></Paragraph>
+            <Paragraph>
+              A fun group of students interested in cybersecurity. The Victoria
+              SEcurity Club is a place for students to hangout and work together
+              on exploring the world of security. We run a number of workshops,
+              CTF's, industry events and compete at national level competitions.
+              Always on the lookout for new student and experience is not a
+              requirement.
+            </Paragraph>
           </LI>
           <LI>
             <Header>GDSC</Header>
