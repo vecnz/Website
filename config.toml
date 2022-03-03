@@ -6,6 +6,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 theme = "tella"
 enableRobotsTXT = true
+ unsafe = true
 
 # Please enable this feature if the site is available in Japanese, Chinese or Korean.
 #hasCJKLanguage = true
@@ -71,6 +72,12 @@ enableRobotsTXT = true
     name = "Contact"
     url = "/contact/"
     weight = 4
+  
+  [[menu.main]]
+  identifier = "events"
+  name = "Events"
+  url = "/events/"
+  weight = 5
 
   # Footer Menu
   [[menu.footer]]
