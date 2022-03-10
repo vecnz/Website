@@ -1,12 +1,11 @@
-baseURL = "https://example.com"
-title = "Tella"
-author = "username"
+baseURL = "https://vec.ac.nz"
+title = "VEC"
+author = "Shae West"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 theme = "tella"
 enableRobotsTXT = true
- unsafe = true
 
 # Please enable this feature if the site is available in Japanese, Chinese or Korean.
 #hasCJKLanguage = true
@@ -23,14 +22,14 @@ enableRobotsTXT = true
 
   [params.logo]
     main = "img/logo/logo.svg"
-    alt = "Tella Logo"
+    alt = "VEC Logo"
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
     size = "h-14"
 
   [params.site]
-    name = "Tella"
+    name = "VEC"
 
   [params.icon]
     #If you want to use FontAwesome, set this parameter to true.
@@ -38,55 +37,48 @@ enableRobotsTXT = true
 
   [params.homepage_meta_tags]
     meta_description = "A Hugo Theme for OSSProject, Companies, Organization..."
-    meta_og_title = "Tella"
+    meta_og_title = "VEC"
     meta_og_type = "website"
-    meta_og_url = "https://tella.pages.dev"
+    meta_og_url = "https://vec.ac.nz"
     meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
-    meta_og_description = "A Hugo Theme for OSSProject, Companies, Organization..."
-    meta_twitter_card = "summary_large_image"
-    meta_twitter_site = "@username"
-    meta_twitter_creator = "@username"
+    meta_og_description = "Victoria Engineering Club"
 
 [menu]
 
   [[menu.main]]
-    identifier = "products"
-    name = "Products"
-    url = "/products/"
+    identifier = "landing"
+    name = "Landing"
+    url = "/"
     weight = 1
 
   [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
     weight = 2
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 3
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 3
   
   [[menu.main]]
-  identifier = "events"
-  name = "Events"
-  url = "/events/"
-  weight = 5
+    identifier = "events"
+    name = "Events"
+    url = "/events/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "board"
+    name = "Board"
+    url = "/board/"
+    weight = 5
 
   # Footer Menu
-  [[menu.footer]]
-    name = "Home"
-    url = "/"
-      weight = 1
 
   [[menu.footer]]
     name = "Github"
-    url = "https://github.com/opera7133/tella"
+    url = "https://github.com/vecnz"
     pre = "<i class='icon-github text-2xl'></i>"
-      weight = 2
+      weight = 1
