@@ -1,7 +1,7 @@
 +++
 author = "Shae West"
 title = "March Newsletter"
-date = "10-03-2022"
+date = "2022-03-10"
 description = "First newsletter of the year"
 tags = [
     "newsletter",

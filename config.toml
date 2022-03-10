@@ -43,35 +43,34 @@ enableRobotsTXT = true
     meta_og_description = "Victoria Engineering Club"
 
 [menu]
-
-  [[menu.main]]
-    identifier = "landing"
-    name = "Landing"
-    url = "/"
-    weight = 1
-
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = 2
+    weight = 1
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 3
+    weight = 2
   
   [[menu.main]]
     identifier = "events"
     name = "Events"
     url = "/events/"
-    weight = 4
+    weight = 3
 
   [[menu.main]]
     identifier = "board"
     name = "Board"
     url = "/board/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "meetings"
+    name = "Meetings"
+    url = "https://drive.google.com/drive/folders/1ShLejx2spVaXIwH9rYDeLtXi6xYeiSfB?usp=sharing"
     weight = 5
 
   # Footer Menu
