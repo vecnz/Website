@@ -70,7 +70,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "meetings"
     name = "Meetings"
-    url = "https://drive.google.com/drive/folders/1ShLejx2spVaXIwH9rYDeLtXi6xYeiSfB?usp=sharing"
+    url = "/meetings/"
     weight = 5
 
   # Footer Menu
