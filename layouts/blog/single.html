@@ -1,0 +1,67 @@
+{{ define "meta_tags" }}
+<meta property="og:title" content="{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}" />
+{{ partial "seo/print.html" . }}
+
+{{- with .Site.Params.facebookAppId }}
+<meta property="fb:app_id" content="{{ . }}" />
+{{- end }}
+<meta name="twitter:title" content="{{ .Title }}">
+<link rel="preload" href='{{ "/css/sweetalert2.min.css" | relURL }}' as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+{{ end }}
+{{ define "main" }}
+<div class="mx-auto my-10 max-w-6xl">
+    <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+        <h1 class="title text-5xl font-bold mb-3">{{.Title}}</h1>
+        <section class="mb-4 text-lg">
+            {{ if .Params.author }}
+            <h4 class="flex flex-row items-center"><span class="icon-person text-2xl mr-2"></span>{{.Params.author}}
+            </h4>
+            {{ end }}
+            {{ with .Params.categories }}
+            <div id="categories" class="flex flex-row items-center">
+                <span class="icon-folder text-2xl mr-1"></span>
+                {{ range . }}
+                <span
+                    class="inline-flex py-1 leading-4 content-center justify-center px-1 text-blue-600 hover:text-blue-800 duration-200"><a
+                        href='{{ "categories" | absURL}}/{{ . | urlize }}'>{{ . }}</a></span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </section>
+        {{ if .Params.image }}
+        <img class="my-4" src="{{ .Params.image | absURL }}">
+        {{ end }}
+        <div class="content prose md:prose-lg lg:prose-xl max-w-none py-1">{{.Content}}</div>
+        <hr class="py-4">
+        {{- with .Site.Params.disqusShortname }}
+        <div class="mb-3">
+            {{ template "_internal/disqus.html" . }}
+        </div>
+        <hr class="py-4">
+        {{ end }}
+        <aside id="meta">
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    {{ with .PrevInSection }}
+                    <a class="previous lg:text-2xl" href="{{.Permalink}}">
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> {{.Title}}
+                        </div>
+                    </a>
+                    {{ end }}
+                </div>
+                {{ with .NextInSection }}
+                <a class="next lg:text-2xl" href="{{.Permalink}}">
+                    <div
+                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                        {{.Title}} <span class="icon-keyboard_arrow_right"></span>
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+        </aside>
+    </div>
+</div>
+{{ end }}

@@ -1,48 +1,23 @@
 {
-  "name": "vecnz.github.io",
-  "homepage": "https://vec.ac.nz",
-  "version": "1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "eslint-config-react-app": "^6.0.0",
-    "gh-pages": "^3.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-iframe": "^1.8.0",
-    "react-is": "^17.0.2",
-    "react-responsive": "^9.0.0-beta.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.3",
-    "styled-components": "^5.3.0"
-  },
+  "name": "tella",
+  "version": "0.0.1",
+  "description": "Simple, Light, Responsive",
+  "main": "index.js",
+  "repository": "https://github.com/opera7133/tella",
+  "author": "wamo <ainznino@pm.me>",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "start": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss -i ./themes/tella/assets/css/main.css -o ./themes/tella/assets/css/style.css --watch",
+    "watch:hugo": "hugo server",
+    "build": "tailwindcss -i ./themes/tella/assets/css/main.css -o ./themes/tella/assets/css/style.css && hugo --minify"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
+    "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.23"
   }
 }
