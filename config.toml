@@ -68,10 +68,16 @@ enableRobotsTXT = true
     weight = 4
 
   [[menu.main]]
+    identifier = "Collective"
+    name = "Collective"
+    url = "/collective/"
+    weight = 5
+
+  [[menu.main]]
     identifier = "meetings"
     name = "Meetings"
     url = "/meetings/"
-    weight = 5
+    weight = 6
 
   # Footer Menu
 
