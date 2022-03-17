@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "git submodule update --remote --merge && npm run build"
+command = "yarn run build"
 
 [context.production.environment]
 HUGO_VERSION = "0.90.0"
