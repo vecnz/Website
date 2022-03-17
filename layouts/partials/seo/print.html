@@ -78,10 +78,10 @@
 
 {{ if .Params.image }}
     {{ with .Params.image }}
-<meta property="og:image" content="{{ . | absURL }}">
-<meta property="og:image:url" content="{{ . | absURL }}">
+    <meta property="og:image" content='{{ "/img/default.jpg" | relURL }}' />
+    <meta property="og:image:url" content='{{ "/img/default.jpg" | relURL }}' />
     {{ end }}
 {{ else }}
-<meta property="og:image" content="{{ .Site.Params.og_image | absURL }}">
-<meta property="og:image:url" content="{{ .Site.Params.og_image | absURL }}">
+<meta property="og:image" content='{{ "/img/default.jpg" | relURL }}' />
+<meta property="og:image:url" content='{{ "/img/default.jpg" | relURL }}' />
 {{ end }}
