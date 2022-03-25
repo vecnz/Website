@@ -78,6 +78,12 @@ enableRobotsTXT = true
     name = "Meetings"
     url = "/meetings/"
     weight = 6
+  
+  [[menu.main]]
+    identifier = "register"
+    name = "Register"
+    url = "https://forms.gle/ooUf1NSCgUJV8h4H9"
+    weight = 7
 
   # Footer Menu
 
