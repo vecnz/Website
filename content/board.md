@@ -15,7 +15,7 @@ title: 'Board'
 - Alex Pol
 
 ## General Executives
-- Naru Thanuwohan
+- Naruebet Thanuwohan (Naru)
 - Brandon Ru
 - Rachel Bartram
 - Isabelle Isaacs
