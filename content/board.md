@@ -2,25 +2,24 @@
 title: 'Board'
 ---
 
-## President
-- Leon Bowie
+## Executive 
+- Naruebet Thanuwohan (Naru), President 
+- VACANT, Vice President
+- Theodore Loach (Theo), Secretary 
+- VACANT, Treasurer
 
-## Vice President
-- Shae West
+## PR & Marketing Team 
+- Ashleigh Vivier, PR & Marketing Lead
+- Julia Mason, Marketing Officer
+- Joseph Robson, Marketing Officer  
 
-## Secretary
-- Georgia Barrand
+## Events Team
+- Felix Ng, Events Lead 
+- Van Vo, Events Manager
 
-## Treasurer
-- Alex Pol
-
-## General Executives
-- Naruebet Thanuwohan (Naru)
-- Brandon Ru
-- Rachel Bartram
-- Isabelle Isaacs
-- Tristan Basinnag
-- Quinten Smit
+## Operations 
+- VACANT, Technology Officer 
+- VACANT, Equity 
 
 ## University Staff
-- Howard Lukefahr
+- [Yi-Te Chiu](https://people.wgtn.ac.nz/yi-te.chiu) 
