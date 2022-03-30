@@ -1,2 +1,2 @@
 ## To Run
-hugo server -D
+VISDA
