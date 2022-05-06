@@ -15,7 +15,6 @@ title: 'Board'
 
 ## Events Team
 - Felix Ng, Events Lead 
-- Van Vo, Events Manager
 
 ## Operations 
 - VACANT, Technology Officer 
