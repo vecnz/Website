@@ -2,6 +2,8 @@
 title: 'Board'
 ---
 
+The VISDA Team operates under the VEC Board.
+
 ## Executive 
 - Naruebet Thanuwohan (Naru), President 
 - VACANT, Vice President
@@ -22,3 +24,5 @@ title: 'Board'
 
 ## University Staff
 - [Yi-Te Chiu](https://people.wgtn.ac.nz/yi-te.chiu) 
+
+Last updated: 7/05/2022 
