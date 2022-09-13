@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.7",
-    "autoprefixer": "10.4.9",
+    "autoprefixer": "10.4.10",
     "concurrently": "7.4.0",
     "postcss": "8.4.16",
     "postcss-cli": "10.0.0",
