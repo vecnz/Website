@@ -3,24 +3,28 @@ title: 'Board'
 ---
 
 ## President
-- Leon Bowie
+- Arnav Dogra
 
 ## Vice President
-- Shae West
+- Izzy Isaacs
 
 ## Secretary
-- Georgia Barrand
+- Z'arn Payne
 
 ## Treasurer
 - Alex Pol
 
+## Engagement Lead
+- Abia
+
 ## General Executives
-- Naruebet Thanuwohan (Naru)
-- Brandon Ru
-- Rachel Bartram
-- Isabelle Isaacs
+- Leon Bowie
 - Tristan Basinnag
 - Quinten Smit
+- Isaac Young
+- Sofie
+- Jared Le Roy De Saint Rene 
+- Ava Rider
 
-## University Staff
+## University Staff Delegate
 - Howard Lukefahr
