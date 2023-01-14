@@ -54,12 +54,6 @@ enableRobotsTXT = true
     name = "Contact"
     url = "/contact/"
     weight = 2
-  
-  [[menu.main]]
-    identifier = "events"
-    name = "Events"
-    url = "/events/"
-    weight = 3
 
   [[menu.main]]
     identifier = "board"
