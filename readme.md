@@ -1,2 +1,3 @@
 ## To Run
-hugo server -D
+
+npm run start
