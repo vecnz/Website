@@ -4,7 +4,7 @@ title: "Contact"
 
 ### Victoria Engineering Club
 
-- Discord: [discord.gg/vec](discord.gg/vec)
+- Discord: [discord.gg/FWJWTwXgGQ](https://discord.gg/FWJWTwXgGQ)
 - Instagram: [instagram.com/vec_nz](instagram.com/vec_nz)
 - Facebook: [facebook.com/VictoriaEngineeringClub](https://www.facebook.com/VictoriaEngineeringClub)
 - Linkedin: [linkedin.com/in/victoria-engineering-club-04a9a3232/](https://www.linkedin.com/in/victoria-engineering-club-04a9a3232/)
