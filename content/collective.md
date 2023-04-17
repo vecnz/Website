@@ -9,7 +9,7 @@ author = "Shae West"
 ## Victoria Information Systems and Data Analytics (VISDA)
 - VISDA is a new Information Systems and Data Analytics society designed to help provide students with unique opportunities to expand their knowledge and skills, help form connections with alumni and employers, improve graduate prospects, and assist in preparing to enter the industry.  
 - We will promote internship and graduate opportunities, facilitate speaker events, DATA & INFO workshops and Case Competitions. Please register [here.](https://vuw.qualtrics.com/jfe/form/SV_6D2hjJlY8Hu0hqm?fbclid=IwAR0gSbuVxU-hluLO6WHialiBAA8XTC38SMsovv7a2TSiQfE2yuGNzSj2qYs)
-- [Discord](discord.gg/vec)
+- [Discord](https://discord.gg/FWJWTwXgGQ)
 - [Instagram](https://www.instagram.com/visdasociety/)
 - [Facebook](https://www.facebook.com/VISDA.Society)
 - [Linkedin](https://www.linkedin.com/company/visda-society/)
