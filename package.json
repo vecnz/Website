@@ -15,7 +15,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "0.5.9",
     "autoprefixer": "10.4.14",
-    "concurrently": "7.6.0",
+    "concurrently": "8.2.2",
     "hugo-cli": "^0.13.0",
     "postcss": "8.4.21",
     "postcss-cli": "10.1.0",
